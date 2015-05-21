@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAGE,IAAK;EACH,UAAU,EAAE,UAAU;;AAItB,sBAEU;EACR,UAAU,EAAE,OAAO",
-"sources": ["../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss"],
+"mappings": "AAGE,IAAK;EACH,UAAU,EAAE,UAAU;;AAItB,sBAEU;EACR,UAAU,EAAE,OAAO;;ACNzB,IAAI;EACF,gBAAgB,EAAE,OAAsB;;AAG1C,MAAM;EACJ,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,WAA0B",
+"sources": ["../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss","../scss/main.scss"],
 "names": [],
 "file": "main.css"
 }

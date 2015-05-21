@@ -1,2 +1,14 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+
+
+
+body{
+  background-color: rgba(245, 245, 241, 1);
+}
+
+header{
+  max-width: 985px;
+  height: 80px;
+  border: 1px rgba(122, 122, 122, 1);
+}

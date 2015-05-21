@@ -4,4 +4,12 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body {
+  background-color: #f5f5f1; }
+
+header {
+  max-width: 985px;
+  height: 80px;
+  border: 1px #7a7a7a; }
+
 /*# sourceMappingURL=main.css.map */
