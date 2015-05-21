@@ -1,0 +1,21 @@
+{
+  "name": "y",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mldunbar/3.4-etsy-recreation",
+  "authors": [
+    "Megan Dunbar <meganleedunbar@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.3",
+    "neat": "~1.7.2",
+    "handlebars": "~3.0.3"
+  }
+}
