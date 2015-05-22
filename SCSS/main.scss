@@ -61,23 +61,53 @@ header a{
   border: 1px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   margin: -40px 0 0 470px;
-  padding: 8px 0px 10px 7px;
+  padding: 8px 0px 10px 8px;
   width: 80px;
+	font-family: sans-serif;
+	font-size: .8em;
+	color: rgba(102, 102, 102, 1);
 }
 
 .navBar{
   float:right;
+	margin-top: -25px;
+	font-family: sans-serif;
 }
 
 .register{
-  margin-top: -60px;
-  margin-left: -30px;
+	display: inline-block;
+  position: relative;
+	font-size: .9em;
+	vertical-align: middle;
+	color: rgba(0, 145, 177, 1);
+	margin-left: -90px;
+	margin-right: 20px;
 }
 
 .signIn{
-
+	display: inline-block;
+	position: relative;
+	font-size: .9em;
+	vertical-align: middle;
+	color: rgba(0, 145, 177, 1);
+	border: 1px solid rgba(0, 145, 177, 1);
+	padding: 8px;
+	border-radius: 4px;
+	margin-right: 10px;
 }
 
 .cart{
-  margin-top: 100px;
+	display: inline-block;
+	position: relative;
+	font-size: .75em;
+	vertical-align: middle;
+	border-left: 1px solid rgba(102, 102, 102, 1);
+	padding-left: 10px;
+	color: rgba(102, 102, 102, 1);
+}
+
+.cart i{
+	display: block;
+	margin-top: -40px;
+	color: rgba(102, 102, 102, 1);
 }
