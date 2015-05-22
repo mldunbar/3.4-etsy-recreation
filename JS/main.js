@@ -1,18 +1,20 @@
 (function(){
   'use strict';
 
-/*Then you can call the function like this,
-where you would replace logResults with the name
-of the function you want to be called with the results. */
+  var url = 'https://api.etsy.com/v2/listings/active.js?api_key=o3atgk4l6n51xg5mz1jgjnag&keywords=whiskey&includes=Images,Shop&sort_on=score';
+  fetchJSONP(url, app);
 
+  /*
+    Call this function with the URL where the JSON lives.
+    We will pass a function as the second argument.
+    That function will be called when the request finished.
+    The argument to that function will be the JSON data.
+    You will need to change the values for url.
+  */
 
+  var ulElement = document.querySelector('.items');
 
-  var url = "https://api.etsy.com/v2/listings/active?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=tacos&includes=Images,Shop";
-fetchJSONP(url, logResults);
-
-//copied code to fetch the data from the above place...where JSON lives
-
-function fetchJSONP(url, callback) {
+	function fetchJSONP(url, callback) {
     var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
     var script = document.createElement('script');
 
@@ -24,6 +26,20 @@ function fetchJSONP(url, callback) {
 
     script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
     document.body.appendChild(script);
-}
+  }
 
-};
+ function app(response) {
+    var items = response.results;
+    console.log(items);
+    displayItems(items);
+ }
+
+ function displayItems(items) {
+    var source   = document.querySelector("#item-template").innerHTML;
+    var template = Handlebars.compile(source);
+    items.forEach(function(item){
+      var output = template(item);
+      ulElement.insertAdjacentHTML('beforeend', output);
+    });
+  }
+})();
