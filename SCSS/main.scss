@@ -128,15 +128,33 @@ header a{
 	height: 1000px;
 }
 
-.listings{
+#item-template{
 	@include span-columns(9);
 }
 
-.listings span {
+.itemBox {
 	@include outer-container();
 	@include span-columns(3 of 9);
 	@include omega(3n);
 	height: 200px;
 	margin-bottom: 5px;
 	background-color: white;
+}
+
+.itemBox h1{
+	font-family: sans-serif;
+	font-size: .5em;
+	color: black;
+}
+
+.itemBox h2{
+	font-family: sans-serif;
+	font-size: .5em;
+	color: gray;
+}
+
+.itemBox h3{
+	font-family: sans-serif;
+	font-size: .5em;
+	color: green;
 }

@@ -31,14 +31,15 @@
     </section>
 
     <section class="listings">
-<ul class="items"></ul>
-      <script id="item-template" type="text/x-handlebars-template">
-    <li class="items">
-      <h1>{{name}}</h1>
-      <img src="{{img}}">
-    </li>
-  </script>
 
+  <script id="item-template" type="text/x-handlebars-template">
+     		<li class="itemBox">
+        	<img src="{{Images.0.url_170x135}}">
+    			   <h1>{{title}}</h1>
+    			   <h2>{{Shop.shop_name}}</h2>
+    			   <h3>${{price}} {{currency_code}}</h3>
+     	 	</li>
+   	 </script>
     </section>
 
 </section>
