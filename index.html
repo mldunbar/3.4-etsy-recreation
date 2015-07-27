@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>etsy</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <header>
+    <a href="https://etsy.com">Etsy</a>
+    <form class="searchBar" action="">
+      <input class="searchField" type="text" placeholder="Search for items or shops">
+      <div class="submitSearch">
+        <link>Search</link>
+      </div>
+    </form>
+    <div class="browse">
+      <link>Browse <i class="fa fa-arrow-down"></i></link>
+    </div>
+    <ul class="navBar">
+      <li class = "register">Register</li>
+      <li class = "signIn">Sign In</li>
+      <li class="cart">Cart<i class="fa fa-shopping-cart fa-2x"></i></li>
+    </ul>
+  </header>
+  <section class="main">
+
+    <section class="sidebar">
+    </section>
+
+    <section class="listings">
+
+  <script id="item-template" type="text/x-handlebars-template">
+     		<li class="itemBox">
+        	<img src="{{Images.0.url_170x135}}">
+    			   <h1>{{title}}</h1>
+    			   <h2>{{Shop.shop_name}}</h2>
+    			   <h3>${{price}} {{currency_code}}</h3>
+     	 	</li>
+   	 </script>
+    </section>
+
+</section>
+
+  <script src="bower_components/handlebars/handlebars.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
