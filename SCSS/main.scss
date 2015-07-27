@@ -10,13 +10,11 @@ ol, ul {
 
 body{
   background-color: rgba(245, 245, 241, 1);
-	@include outer-container(980px);
 }
 
 //header styling
 
 header{
-	@include outer-container();
   height: 80px;
   border-top: 1px solid rgba(122, 122, 122, 1);
   border-bottom: 1px solid rgba(122, 122, 122, 1);
@@ -120,6 +118,7 @@ header a{
 
 .main{
 	padding-top: 50px;
+	@include outer-container();
 }
 
 .sidebar{
@@ -141,6 +140,12 @@ header a{
 	background-color: white;
 }
 
+.itemBox img{
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	@include span-columns(12);
+}
+
 .itemBox h1{
 	font-family: sans-serif;
 	font-size: .5em;
@@ -157,4 +162,16 @@ header a{
 	font-family: sans-serif;
 	font-size: .5em;
 	color: green;
+}
+
+.footer{
+	border-top: 1px solid gray;
+}
+
+.finds{
+	border: 5px solid gray;
+}
+
+.subscribe{
+
 }

@@ -30,18 +30,21 @@
     <section class="sidebar">
     </section>
 
-    <section class="listings">
-
-  <script id="item-template" type="text/x-handlebars-template">
-     		<li class="itemBox">
-        	<img src="{{Images.0.url_170x135}}">
-    			   <h1>{{title}}</h1>
-    			   <h2>{{Shop.shop_name}}</h2>
-    			   <h3>${{price}} {{currency_code}}</h3>
+    <script id="item-template" type="text/x-handlebars-template">
+     		 <li class="itemBox">
+        		<img src="{{Images.0.url_170x135}}">
+      			<h1>{{title}}</h1>
+      			<h2>{{Shop.shop_name}}</h2>
+      			<h3>${{price}} {{currency_code}}</h3>
      	 	</li>
    	 </script>
-    </section>
 
+</section>
+
+<section class="footer">
+  <div class="finds">Get top trends and fresh editors' picks in your inbox with Etsy Finds.
+    <button name="subscribe">Subscribe</button>
+  </div>
 </section>
 
   <script src="bower_components/handlebars/handlebars.js"></script>
